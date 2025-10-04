@@ -9,7 +9,7 @@ class TreeNode {
   }
 }
 
-import { diameterOfBinaryTree } from './DiameterOfBinaryTree';
+import { diameterOfBinaryTree } from '../DiameterOfBinaryTree';
 
 
 describe('Diameter of a Binary Tree', () => {
