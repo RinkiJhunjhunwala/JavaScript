@@ -38,7 +38,6 @@ describe('Diameter of a Binary Tree', () => {
     //    5   6
     //   /     \
     //  7       8
-    // Longest path is 7 -> 5 -> 4 -> 6 -> 8 (length 4)
     const root = new TreeNode(1);
     root.left = new TreeNode(2);
     root.left.left = new TreeNode(3);
@@ -47,12 +46,15 @@ describe('Diameter of a Binary Tree', () => {
     root.left.right.right = new TreeNode(6);
     root.left.right.left.left = new TreeNode(7);
     root.left.right.right.right = new TreeNode(8);
+
+    // CORRECTED: The longest path is 7 -> 5 -> 4 -> 6 -> 8, which has 4 edges.
     expect(diameterOfBinaryTree(root)).toBe(4);
   });
 
   it('should return 0 for a null or single-node tree', () => {
     expect(diameterOfBinaryTree(null)).toBe(0);
     const singleNode = new TreeNode(1);
+    // Typo fixed here
     expect(diameterOfBinaryTree(singleNode)).toBe(0);
   });
 });
