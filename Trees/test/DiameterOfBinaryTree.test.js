@@ -1,5 +1,16 @@
-import { diameterOfBinaryTree } from './diameterOfBinaryTree';
-import { TreeNode } from '../utils/TreeNode';
+/**
+ * A node for a binary tree.
+ */
+class TreeNode {
+  constructor(value) {
+    this.value = value;
+    this.left = null;
+    this.right = null;
+  }
+}
+
+import { diameterOfBinaryTree } from './DiameterOfBinaryTree';
+
 
 describe('Diameter of a Binary Tree', () => {
   it('should calculate the correct diameter for a standard tree', () => {
