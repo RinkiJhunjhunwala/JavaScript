@@ -7,21 +7,21 @@
  * @see {@link https://en.wikipedia.org/wiki/Tree_(graph_theory)#Properties}
  */
 export function diameterOfBinaryTree(root) {
-  let diameter = 0;
+  let diameter = 0
 
   function height(node) {
     if (node === null) {
-      return 0;
+      return 0
     }
 
-    const leftHeight = height(node.left);
-    const rightHeight = height(node.right);
+    const leftHeight = height(node.left)
+    const rightHeight = height(node.right)
 
-    diameter = Math.max(diameter, leftHeight + rightHeight);
+    diameter = Math.max(diameter, leftHeight + rightHeight)
 
-    return 1 + Math.max(leftHeight, rightHeight);
+    return 1 + Math.max(leftHeight, rightHeight)
   }
 
-  height(root);
-  return diameter;
+  height(root)
+  return diameter
 }
