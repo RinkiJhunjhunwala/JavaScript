@@ -3,14 +3,13 @@
  */
 class TreeNode {
   constructor(value) {
-    this.value = value;
-    this.left = null;
-    this.right = null;
+    this.value = value
+    this.left = null
+    this.right = null
   }
 }
 
-import { diameterOfBinaryTree } from '../DiameterOfBinaryTree';
-
+import { diameterOfBinaryTree } from '../DiameterOfBinaryTree'
 
 describe('Diameter of a Binary Tree', () => {
   it('should calculate the correct diameter for a standard tree', () => {
@@ -57,3 +56,4 @@ describe('Diameter of a Binary Tree', () => {
     expect(diameterOfBinaryTree(singleNode)).toBe(0)
   })
 })
+
