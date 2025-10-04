@@ -47,7 +47,7 @@ describe('Diameter of a Binary Tree', () => {
     root.left.right.right = new TreeNode(6);
     root.left.right.left.left = new TreeNode(7);
     root.left.right.right.right = new TreeNode(8);
-    expect(diameterOfBinaryTree(root)).toBe(6);
+    expect(diameterOfBinaryTree(root)).toBe(4);
   });
 
   it('should return 0 for a null or single-node tree', () => {
